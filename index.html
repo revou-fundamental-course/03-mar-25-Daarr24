@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">RevoU School</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Our Profile</a></li>
+                <li><a href="#messageus" class="btn btn-custom">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Hi <span id="username-display">Name</span>, Welcome to RevoU School website</h1>
+            <!--Input nama untuk JS-->
+            <input 
+            type="text"
+            id="username-input"
+            placeholder="Masukan nama anda..."
+            />
+            <button id="btn-submit-name">Submit</button>
+        </div>
+    </section>
+    <!--Tentang sekolah-->
+    <section class="about">
+        <h2>About Our School</h2>
+        <p>Sekolah ini beridri pada tahun 1980, didirikan oleh 
+            jendral belanda yaitu jendral Van Dar Dagh.
+        </p>
+    </section>
+    <!--Visi dan Misi Sekolah-->
+    <section class="vision-mission">
+        <h2>Vision &amp; Mission</h2>
+        <div class="Vision">
+        <h3>Our Vision</h3>
+        <p>Menjadi Sekolah yang unggulan dan membentuk generasi berahlak yang mulia,
+            berintegritas, dan berprestasi.
+        </p>
+        </div>
+        <div class="Mission">
+            <h3>Our Mission</h3>
+            <ul>
+                <li>meningkatkan mutu pendidikan berbasis teknologi.</li>
+                <li>mengembangkan potensi siswa dalam bidang akademik maupun non-akademik.</li>
+                <li>menanamkan nilai-nilai moral dan budi pekerti luhur.</li>
+            </ul>
+        </div>
+    </section>
+    <!--form kontak message us-->
+    <fieldset>
+    <section id=messageus class="contact">
+        <h2>Message Us</h2>
+        <div class="contact-form-container">
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" />
+
+                <label for="gender">Gender:</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" />
+                
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" />
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit" id="btn-submit-form" style="width: 500px;">Submit</button>
+            </form>
+            <div id="result-display" style="margin-top: 20px;">
+                <p id="result-display"></p>
+            </div>
+        </div>
+    </section>
+    </fieldset>
+
+    <footer>
+        <p>Created By Haidar Farhan Rizaldi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
